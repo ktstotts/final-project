@@ -45,6 +45,8 @@
 
   p {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
   }
 
   .weekly-recipe {
@@ -53,6 +55,28 @@
       padding-top: 60px;
   }
   /* styling body */
+
+  /* styling images*/
+  img {
+    max-width: 100%;
+    height: auto;
+    width: 600px;
+    border-radius: 8px;
+    padding-bottom: 60px;
+  }
+  /* styling images*/
+
+  /*styling quote*/
+  .font {
+  font-family: 'Lobster', cursive;
+}
+.quote {
+  padding-top: 60px;
+  padding-bottom:60px;
+  font-size: 30px;
+}
+  /*styling quote*/
+
 
   /* styling footer */
   .main-footer {
