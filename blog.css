@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+  /* styling header */
+  .main-header {
+      display: flex;
+      justify-content: center;
+      /* padding-bottom: 25px;
+      border-bottom: solid .5px rgb(134, 133, 133);
+      border-bottom-width: thin; */
+
+
+  }
+
+  .logo {
+      color: rgb(179, 67, 3);
+      font-family: 'Pacifico', cursive;
+      font-size: 350%;
+      text-align: center;
+  }
+
+  li {
+      list-style-type: none;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      margin: 0 auto;
+      justify-content: center;
+      color: rgb(134, 133, 133);
+
+  }
+  /* styling header */
+
+  /* styling body */
+  body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+
+  }
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(43, 43, 43)
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .weekly-recipe {
+      flex: 1;
+      text-align: center;
+      padding-top: 60px;
+  }
+  /* styling body */
+
+  /* styling footer */
+  .main-footer {
+       background: #d9e4ea;
+        padding: 2em 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+
+  /* styling footer */
