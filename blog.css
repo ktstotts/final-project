@@ -60,7 +60,6 @@ div.gallery img {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-
   }
 
   h2 {
@@ -79,7 +78,24 @@ div.gallery img {
       text-align: center;
       padding-top: 60px;
   }
+
+  .weekly-recipe-text {
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+  }
   /* styling body */
+
+  /* styling about me */
+  .about {
+    float: right;
+  }
+  .me {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+  /* styling about me */
 
   /* styling images*/
   img {
