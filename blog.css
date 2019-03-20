@@ -1,10 +1,18 @@
 * {
     box-sizing: border-box;
   }
+  .clearfix {
+    overflow: auto;
+  }
   /* styling header */
   header {
     /* background-image: linear-gradient(to bottom, white, #d9e4ea); */
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("images/lemon.jpg");
+    height: auto;
+    background-position: center;
+   /* background-repeat: no-repeat;
+     background-size: cover; */
   }
   .main-header {
       display: flex;
@@ -17,7 +25,7 @@
   }
 
   .logo {
-      color: rgb(179, 67, 3);
+     color: rgb(43, 43, 43);
       font-family: 'Pacifico', cursive;
       font-size: 350%;
       text-align: center;
@@ -27,6 +35,7 @@
       list-style-type: none;
       font-family: 'Roboto', sans-serif;
       text-align: center;
+      font-weight: bolder;
       margin: 0 auto;
       justify-content: center;
       color: rgb(134, 133, 133);
@@ -46,6 +55,8 @@
    }
   /* styling links in header*/
   /* styling header */
+
+
 
   /* styling recipe gallery */
 .gallery-container {
@@ -103,13 +114,13 @@ figcaption {
 
   h2 {
     font-family: 'Roboto', sans-serif;
-    color: rgb(43, 43, 43)
+    color: rgb(43, 43, 43);
+    text-align: center;
   }
 
   p {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-weight: bold;
+    font-family: 'lobster', cursive;
+
   }
 
   .weekly-recipe {
@@ -118,25 +129,47 @@ figcaption {
       padding-top: 60px;
       padding-left: 10px;
       padding-right: 10px;
+      width: 80%;
   }
 
   .weekly-recipe-text {
     font-family: 'Lobster', cursive;
     font-size: 55px;
+    text-align: center;
   }
+/*recipe of the week and about me container*/
+.weekly-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/*recipe of the week and about me container*/
   /* styling body */
 
   /* styling about me */
   .about {
+    /* font-family: 'Pacifico', cursive; */
+    line-height: 2.8em;
+    width: 20%;
     float: right;
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 5px;
   }
   .me {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
+
+  border-radius: 70%;
+  padding: 10px;
+  width: 100px;
+  float:right;
+}
+
+.lobster {
+  color: yellow;
+  font-size: 10px;
 }
   /* styling about me */
+
 
   /* styling images*/
   img {
@@ -172,6 +205,7 @@ figcaption {
         padding: 2em 0;
         margin-top: 30px;
         text-align: center;
+
     }
 
 
