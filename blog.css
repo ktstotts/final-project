@@ -3,7 +3,8 @@
   }
   /* styling header */
   header {
-    background-image: linear-gradient(to bottom, #00ffff, #d9e4ea);
+    background-image: linear-gradient(to bottom, white, #d9e4ea);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .main-header {
       display: flex;
@@ -39,8 +40,9 @@
   }
 
    a:hover {
-       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-
+       /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
+       color: white;
+  text-shadow: 2px 2px 4px #000000;
    }
   /* styling links in header*/
   /* styling header */
@@ -52,21 +54,38 @@
   padding-top: 50px;
 }
 
-  div.gallery {
+  figure.gallery {
   margin: 5px;
   /* border: 1px solid #ccc; */
   /* float: right; */
   /* width: 250px; */
 }
 
-div.gallery:hover {
+figure.gallery:hover {
   /* border: 1px solid #777; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-div.gallery img {
+figure.gallery img {
   width: 100%;
    height: auto;
+}
+
+figure {
+	margin: 0;
+	line-height: 0;
+  position: relative;
+}
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;
+	background: rgba(19,43,102, .85);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
   /* styling recipe gallery */
@@ -119,7 +138,10 @@ div.gallery img {
     height: auto;
     width: 600px;
     border-radius: 8px;
-    padding-bottom: 5px;
+    padding-bottom:0;
+  }
+  img:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   /* styling images*/
 
@@ -136,8 +158,11 @@ div.gallery img {
 
 
   /* styling footer */
+
+
   .main-footer {
-       background: #d9e4ea;
+
+      background-image: linear-gradient(to top, white, #d9e4ea);
         padding: 2em 0;
         margin-top: 30px;
         text-align: center;
