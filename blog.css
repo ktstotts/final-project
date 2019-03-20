@@ -142,32 +142,40 @@ figcaption {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  text-align: center;
 }
 /*recipe of the week and about me container*/
   /* styling body */
 
   /* styling about me */
   .about {
-    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Roboto', sans-serif;
+    color: rgb(43, 43, 43);
     line-height: 2.8em;
     width: 20%;
     float: right;
     flex: 1;
     border: 1px solid #ddd;
-    padding: 5px;
+    padding: 4px;
   }
   .me {
 
   border-radius: 70%;
-  padding: 10px;
+  padding: 5px;
   width: 100px;
   float:right;
 }
 
-.lobster {
+.firstcharacter {
   color: yellow;
-  font-size: 10px;
+  float: left;
+  font-family: 'Pacifico', cursive;
+  line-height: 60px;
+  font-size: 35px;
+  /* padding-right: px; */
+  padding-left: 3px;
 }
+
   /* styling about me */
 
 
@@ -228,6 +236,21 @@ figcaption {
   }
 
     @media only screen and (max-width: 989px) {
+      .about {
+        font-family: 'Roboto', sans-serif;
+        color: rgb(43, 43, 43);
+        line-height: 2.8em;
+        width: 80%;
+        /* float: right; */
+        flex: 1;
+        border: 1px solid #ddd;
+        margin-top: 50px;
+      }
+
+      .weekly-recipe {
+        padding-left: 100px;
+      }
+
      .gallery-container {
        display: flex;
        flex-wrap: wrap;
@@ -241,7 +264,7 @@ figcaption {
        }
 }
 
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (max-width: 1584px) {
       .gallery-container {
         display: flex;
         flex-wrap: wrap;
