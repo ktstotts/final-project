@@ -3,7 +3,7 @@
   }
   /* styling header */
   header {
-    background-image: linear-gradient(to bottom, white, #d9e4ea);
+    /* background-image: linear-gradient(to bottom, white, #d9e4ea); */
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .main-header {
@@ -50,12 +50,15 @@
   /* styling recipe gallery */
 .gallery-container {
   display: flex;
-  justify-content: center;
-  padding-top: 50px;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  padding-top: 50px
+
 }
 
   figure.gallery {
-  margin: 5px;
+  margin: 10px;
+
   /* border: 1px solid #ccc; */
   /* float: right; */
   /* width: 250px; */
@@ -75,6 +78,7 @@ figure {
 	margin: 0;
 	line-height: 0;
   position: relative;
+  text-align: center;
 }
 
 figcaption {
@@ -82,7 +86,7 @@ figcaption {
 	line-height: 1.5;
 	color: #fff;
 	padding: 1em;
-	background: rgba(19,43,102, .85);
+	background: rgba(220, 237, 33, 0.81);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -112,6 +116,8 @@ figcaption {
       flex: 1;
       text-align: center;
       padding-top: 60px;
+      padding-left: 10px;
+      padding-right: 10px;
   }
 
   .weekly-recipe-text {
@@ -170,3 +176,49 @@ figcaption {
 
 
   /* styling footer */
+
+   @media only screen and (max-width: 600px) {
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+    }
+
+    figure.gallery img {
+      width: 400px;
+    }
+  }
+
+    @media only screen and (max-width: 989px) {
+     .gallery-container {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       padding-top: 50px;
+       padding-left: 10px;
+       padding-right: 10px;
+}
+       figure.gallery img {
+         width: 400px;
+       }
+}
+
+    @media only screen and (max-width: 1400px) {
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+          }
+
+    figure.gallery img {
+      width: 300px;
+    }
+
+}
