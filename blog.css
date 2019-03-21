@@ -233,6 +233,61 @@ figcaption {
 
   /* styling footer */
 
+  .bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+  }
+
+  .modal-content {
+    width: 500px;
+    height: 300px;
+    background-image: url(images/lemon.jpg);
+    border-radius: 4px;
+    position: absolute;
+    padding-top: 20px;
+
+
+  }
+
+  input {
+ position: relative;
+ /* top: 460px; */
+ width: 250px;
+ /* right: 540px; */
+  }
+
+  button {
+position: relative;
+/* top: 445px;
+left: 560px; */
+height: 40px;
+border-radius: 8px;
+font-family: Roboto;
+background-color: #336699;
+  }
+
+  .modal-text {
+    padding-top: 80px;
+  }
+
+  .subscribe-btn button {
+    width: 100px;
+    border-radius: 8px;
+    background-color: #336699;
+    font-family: Roboto;
+    font-weight: bolder;
+
+  }
+
+
+
    @media only screen and (max-width: 600px) {
     .gallery-container {
       display: flex;
@@ -247,6 +302,7 @@ figcaption {
     figure.gallery img {
       width: 400px;
     }
+
   }
 
     @media only screen and (max-width: 989px) {
